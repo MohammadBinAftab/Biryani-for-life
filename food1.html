@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header>
+     <!---------Modal for profile-->
+    <!---for sign up page-->
+    <div class="modal fade modal-lg"  id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Profile</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="mb-3">
+                  <label for="confirm-password" class="form-label">Confirm password</label>
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Sign Up</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Sign in page-->
+      <div class="modal fade modal-lg"  id="exampleModal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Profile Sign in</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Sign In</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+      
+          <!---------------Navbar-------------------->
+          <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                  </div>
+                </div>
+              </div>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- Cart Logo -->
+          <div class="cart-logo">
+              <img src="cart.jpg" alt="Cart">
+            </div>
+        
+            <!-- Profile Section Logo -->
+            <div class="profile-logo">
+              <img src="profile.jpg" alt="Profileclass=" data-bs-toggle="modal" data-bs-target="#exampleModal"">
+            </div>
+            </nav>
+  </header>
+  <main>
+<!--Increment Decrement-->
+<h1>Kitna Khaayega:</h1>
+	<h2 id="count-el">0</h2>
+	<button class="increment" id="increment-btn" min="1" max="10" onclick="increment()">+</button>
+    <button class="increment" id="increment-btn" min="1" max="10" onclick="decrement()">-</button>    
+	<script src="Increment.js">
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
