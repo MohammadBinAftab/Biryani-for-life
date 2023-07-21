@@ -180,3 +180,46 @@ color: rgba(38, 29, 86, 0.5);
     justify-content: space-between; /* Distribute cards horizontally with space between */
     margin-bottom: 5px; /* Lower space between cards */
   }
+
+ /* Custom CSS for the increment and decrement section */
+ .increment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align the container to the right */
+  margin-top: 90px; /* Add some spacing from the h2 element */
+  padding-right: 150px; /* Add padding from the right side */
+}
+
+/* Style for the h1 and h2 elements */
+h1, h2 #ic
+{
+  text-align: center; /* Center the h1 and h2 elements */
+}
+
+/* Style for the increment and decrement buttons */
+    .increment-btn {
+      margin-top: 10px; /* Add some spacing between the buttons and h2 element */
+      padding: 8px 12px; /* Adjust padding for better appearance */
+      font-size: 18px; /* Adjust font size for better appearance */
+    }
+
+    .img-thumbnail {
+      max-width: 600px; /* Limit the width to 600px */
+      height: auto; /* Keep the aspect ratio */
+      margin-right: 20px; /* Add some spacing between the image and the container */
+    }
+
+      /* Custom CSS to place image and increment container side by side */
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
+      .image-container .img-thumbnail {
+        flex: 1;
+        margin-right: 20px;
+      }
+  
+      .image-container .increment-container {
+        flex: 1;
+      }
