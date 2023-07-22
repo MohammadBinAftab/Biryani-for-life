@@ -128,7 +128,10 @@ h3 {
     font-weight: bold;
     width: 200px;
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 30px; /* Adjust this value to center the symbol vertically */
+
   }
   
   #increment-btn{
@@ -185,9 +188,10 @@ color: rgba(38, 29, 86, 0.5);
  .increment-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Align the container to the right */
+  align-items: center; /* Align the container to the right */
   margin-top: 90px; /* Add some spacing from the h2 element */
   padding-right: 150px; /* Add padding from the right side */
+  height: 30px;
 }
 
 /* Style for the h1 and h2 elements */
@@ -223,3 +227,16 @@ h1, h2 #ic
       .image-container .increment-container {
         flex: 1;
       }
+
+      .increment-container h1,
+      .increment-container h2,
+      .increment-container h2 + button {
+        margin: 0;
+      }
+  
+      .smaller {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+      }
+      
