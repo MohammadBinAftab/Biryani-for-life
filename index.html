@@ -16,6 +16,43 @@
 
 <body>
   <header>
+    <!--Modal for cart-->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number">
+              </div>
+              <div class="mb-3">
+                <label for="cardName" class="form-label">Cardholder Name</label>
+                <input type="text" class="form-control" id="cardName" placeholder="Enter the cardholder's name">
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="expiryDate" class="form-label">Expiry Date</label>
+                  <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cvv" class="form-label">CVV</label>
+                  <input type="password" class="form-control" id="cvv" placeholder="CVV">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!---------Modal for profile-->
     <!---for sign up page-->
     <div class="modal fade modal-lg"  id="exampleModal" tabindex="-1" role="dialog">
@@ -108,13 +145,15 @@
           </form>
           <!-- Cart Logo -->
     <div class="cart-logo">
-        <img src="cart.jpg" alt="Cart">
+        <img src="cart.jpg" alt="Cart" data-bs-toggle="modal" data-bs-target="#paymentModal">
       </div>
   
       <!-- Profile Section Logo -->
-      <div class="profile-logo">
-        <img src="profile.jpg" alt="Profileclass=" data-bs-toggle="modal" data-bs-target="#exampleModal"">
-      </div>
+      <!-- Profile Section Logo -->
+<div class="profile-logo">
+  <img src="profile.jpg" alt="Profile" data-bs-toggle="modal" data-bs-target="#exampleModal">
+</div>
+
       </nav>
   </header>
      <!---------------Carousel-------------------->
@@ -177,7 +216,7 @@
           </ul>
           <p class="card-text">Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish</p>
           <div style="display: flex; justify-content: center;">
-            <a href="#" class="btn btn-outline-success">Order Now</a>
+            <a href="food1.html" class="btn btn-outline-success">Order Now</a>
           </div>
         </div>
       </div>
@@ -197,7 +236,7 @@
           </ul>
           <p class="card-text">Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish</p>
           <div style="display: flex; justify-content: center;">
-            <a href="#" class="btn btn-outline-success">Order Now</a>
+            <a href="food1.html" class="btn btn-outline-success">Order Now</a>
           </div>
         </div>
       </div>
@@ -217,7 +256,7 @@
           </ul>
           <p class="card-text">Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish</p>
           <div style="display: flex; justify-content: center;">
-            <a href="#" class="btn btn-outline-success">Order Now</a>
+            <a href="food1.html" class="btn btn-outline-success">Order Now</a>
           </div>
         </div>
       </div>
